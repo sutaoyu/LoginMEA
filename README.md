@@ -1,8 +1,6 @@
 # LoginMEA
-[Paper][ECAI 2024]  LoginMEA: Local-to-Global Interaction Network for Multi-modal Entity Alignment
+The code of paper _**LoginMEA: Local-to-Global Interaction Network for Multi-modal Entity Alignment**_ [[arxiv](https://arxiv.org/abs/2407.19625)] [[ECAI](https://ebooks.iospress.nl/doi/10.3233/FAIA240612)] in Proceedings of ECAI 2024.
 
-
-# LoginMEA
 
 <div align="center">
     <img src="./files/LoginMEA.jpg" width="70%" height="auto" />
@@ -30,6 +28,23 @@ The multi-modal version of DBP15K dataset comes from the [EVA](https://github.co
 
 ```
 bash run_mmkb.sh
+```
+
+
+## Citation
+
+If you use this model or code, please cite it as follows:
+
+```
+@misc{LoginMEA,
+      title={LoginMEA: Local-to-Global Interaction Network for Multi-modal Entity Alignment}, 
+      author={Taoyu Su and Xinghua Zhang and Jiawei Sheng and Zhenyu Zhang and Tingwen Liu},
+      year={2024},
+      eprint={2407.19625},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.19625}, 
+}
 ```
 
 
