@@ -1,4 +1,5 @@
 # LoginMEA
+
 The code of paper _**LoginMEA: Local-to-Global Interaction Network for Multi-modal Entity Alignment**_ [[arxiv](https://arxiv.org/abs/2407.19625)] [[ECAI](https://ebooks.iospress.nl/doi/10.3233/FAIA240612)] in Proceedings of ECAI 2024.
 
 
