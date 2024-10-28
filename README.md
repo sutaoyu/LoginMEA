@@ -38,14 +38,33 @@ bash run_mmkb.sh
 If you use this model or code, please cite it as follows:
 
 ```
-@misc{LoginMEA,
-      title={LoginMEA: Local-to-Global Interaction Network for Multi-modal Entity Alignment}, 
-      author={Taoyu Su and Xinghua Zhang and Jiawei Sheng and Zhenyu Zhang and Tingwen Liu},
-      year={2024},
-      eprint={2407.19625},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2407.19625}, 
+@inproceedings{LoginMEA,
+  author       = {Taoyu Su and
+                  Xinghua Zhang and
+                  Jiawei Sheng and
+                  Zhenyu Zhang and
+                  Tingwen Liu},
+  editor       = {Ulle Endriss and
+                  Francisco S. Melo and
+                  Kerstin Bach and
+                  Alberto Jos{\'{e}} Bugar{\'{\i}}n Diz and
+                  Jose Maria Alonso{-}Moral and
+                  Sen{\'{e}}n Barro and
+                  Fredrik Heintz},
+  title        = {LoginMEA: Local-to-Global Interaction Network for Multi-Modal Entity
+                  Alignment},
+  booktitle    = {{ECAI} 2024 - 27th European Conference on Artificial Intelligence,
+                  19-24 October 2024, Santiago de Compostela, Spain},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {392},
+  pages        = {1173--1180},
+  publisher    = {{IOS} Press},
+  year         = {2024},
+  url          = {https://doi.org/10.3233/FAIA240612},
+  doi          = {10.3233/FAIA240612},
+  timestamp    = {Fri, 25 Oct 2024 12:13:46 +0200},
+  biburl       = {https://dblp.org/rec/conf/ecai/SuZS0L24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
