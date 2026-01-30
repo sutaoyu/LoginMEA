@@ -14,6 +14,24 @@ Is_LMFSoftmax=0
 joint_type=1
 mr_fusion_type=7
 final_fusion_type=0
+
+if [ ! -d "logs" ]; then
+    mkdir logs
+    echo "Created directory: logs"
+fi
+
+
+if [ ! -d "save_pkl" ]; then
+    mkdir save_pkl
+    echo "Created directory: save_pkl"
+fi
+
+if [ ! -d "data" ]; then
+    echo "Error: please put data directory in this folder by following README.md "
+    exit 1
+fi
+
+
 if [[ "$dataset" == *"FB"* ]]; then
     dataset_dir='mmkb-datasets'
     tau=0.1
