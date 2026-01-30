@@ -8,12 +8,12 @@ bsize=3500
 adapter_choice=0
 dropout=0.0
 rank=8
-use_GphForwards=1
+use_GphForward=1
 other_modal_type=0
 Is_LMFSoftmax=0
 joint_type=1
 mr_fusion_type=7
-final_fusion_types=(0)
+final_fusion_type=0
 if [[ "$dataset" == *"FB"* ]]; then
     dataset_dir='mmkb-datasets'
     tau=0.1
@@ -46,7 +46,7 @@ CUDA_VISIBLE_DEVICES=${gpu_id} python3 -u src/run.py \
     --seed ${seed} \
     --tau ${tau} \
     --tau2 4.0 \
-    --structure_encoder "Dualmodal-joint-Mr" \
+    --structure_encoder "Dualmodal-joint-LMF" \
     --joint_type ${joint_type} \
     --img_dim 300 \
     --attr_dim 300 \
@@ -64,6 +64,7 @@ CUDA_VISIBLE_DEVICES=${gpu_id} python3 -u src/run.py \
     --mr_fusion_type ${mr_fusion_type} \
     --final_fusion_type ${final_fusion_type} \
     --use_proxy \
+    --use_mean_img \
     --w_name \
     --w_char  > logs/${file_name}.log
 echo $0 >> logs/${file_name}.log

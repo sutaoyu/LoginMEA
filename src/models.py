@@ -13,13 +13,6 @@ import random
 import numpy as np
 from torch_scatter import scatter_sum
 
-from timm.models.layers import Mlp, DropPath
-
-try:
-    from layers import *
-except:
-    from src.layers import *
-
 
 class MrFusionGraphAttention(nn.Module):
     def __init__(
@@ -331,7 +324,7 @@ class MultiModalEncoderMrFusion(nn.Module):
             att_emb = None
 
         if self.args.w_gcn:
-            if self.args.structure_encoder == "Dualmodal-joint-Mr":
+            if self.args.structure_encoder == "Dualmodal-joint-LMF":
                 joint_emb = []
                 if img_emb is not None:
                     joint_emb.append(img_emb)
