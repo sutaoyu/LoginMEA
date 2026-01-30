@@ -41,6 +41,7 @@ else
     tau=0.1
     ratio=0.3
 fi
+
 echo "Running with dataset=${dataset}, ratio=${ratio}"
 current_datetime=$(date +"%Y-%m-%d-%H-%M")
 head_name=${current_datetime}_${dataset}
@@ -51,7 +52,7 @@ CUDA_VISIBLE_DEVICES=${gpu_id} python3 -u src/run.py \
     --pred_name ${file_name} \
     --rate ${ratio} \
     --lr .0005 \
-    --epochs 1000 \
+    --epochs 500 \
     --dropout ${dropout} \
     --hidden_units "300,300,300" \
     --check_point 50  \
